@@ -7,7 +7,7 @@
   <Project>https://github.com/Laverna/laverna</Project>
   <Repository>thklein/laverna</Repository>
   <Registry>https://hub.docker.com/r/thklein/laverna/</Registry>
-  <GitHub>https://github.com/senseiner/docker-templates/tree/master/Laverna</GitHub>
+  <GitHub></GitHub>
   <TemplateURL>https://raw.githubusercontent.com/senseiner/docker-templates/master/Laverna/laverna.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/Laverna/img/laverna.png</Icon>
   <Network>bridge</Network>
@@ -26,7 +26,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>path to config</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
