@@ -7,7 +7,7 @@
   <Project>https://github.com/Laverna/laverna</Project>
   <Repository>thklein/laverna</Repository>
   <Registry>https://hub.docker.com/r/thklein/laverna/</Registry>
-  <GitHub></GitHub>
+  <GitHub>https://github.com/senseiner/docker-templates/tree/master/Laverna</GitHub>
   <TemplateURL>https://raw.githubusercontent.com/senseiner/docker-templates/master/Laverna/laverna.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/Laverna/img/laverna.png</Icon>
   <Network>bridge</Network>
@@ -15,12 +15,19 @@
   <Support>https://lime-technology.com/forum/index.php</Support>
   <WebUI> http://[IP]:[PORT:85]</WebUI>
   <Networking>
-    <Mode>host</Mode>
-    <Publish/>
+  <Mode>bridge</Mode>
+  <Publish>
+    <Port>
+      <ContainerPort>80</ContainerPort>
+      <HostPort>85</HostPort>
+      <Protocol>tcp</Protocol>
+    </Port>
+  </Publish>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/laverna</HostDir>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -41,7 +48,7 @@ Live demo: [a href]https://laverna.cc/[/a][br]
 [br]
 [b][u][span style='color: #E80000;']Config:[/span][/u][/b][br]
 [u][b]Volume Mapping[/b][/u][br]
-[b]/etc/netdata[/b]: App configuration, usually mapped to /mnt/cache/appdata/laverna[br]
+[b]/config[/b]: This is where Laverna will store it's configuration files, usually mapped to /mnt/cache/appdata/laverna[br]
   </Description>
 
   <changes>
