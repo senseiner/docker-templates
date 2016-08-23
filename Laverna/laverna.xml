@@ -23,7 +23,6 @@
       <HostDir>/mnt/cache/appdata/laverna</HostDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
   </Data>
   <Environment/>
 
