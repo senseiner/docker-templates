@@ -8,7 +8,7 @@
   <Repository>thklein/laverna</Repository>
   <Registry>https://hub.docker.com/r/thklein/laverna/</Registry>
   <GitHub></GitHub>
-  <TemplateURL>https://raw.githubusercontent.com/senseiner/docker-templates/master/</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/senseiner/docker-templates/master/Laverna/laverna.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/Laverna/img/laverna.png</Icon>
   <Network>host</Network>
   <Privileged>false</Privileged>
