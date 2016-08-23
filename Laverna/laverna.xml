@@ -1,46 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-    <Date>2016-08-22</Date>
-    <Beta>False</Beta>
-    <Category>Productivity:Notes</Category>
-    <Name>Laverna</Name>
-    <Project>https://github.com/Laverna/laverna</Project>
-    <Repository>thklein/laverna</Repository>
-    <Registry>https://hub.docker.com/r/thklein/laverna/</Registry>
-    <GitHub></GitHub>
-    <TemplateURL>https://raw.githubusercontent.com/senseiner/docker-templates/master/Laverna/laverna.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/Laverna/img/laverna.png</Icon>
-    <Network>host</Network>
-    <Privileged>false</Privileged>
-    <Support>https://lime-technology.com/forum/index.php</Support>
-    <WebUI>
-        http://[IP]:[PORT:85]</WebUI>
-    <Networking>
-        <Mode>host</Mode>
-        <Publish/>
-    </Networking>
-    <Data>
-        <Volume>
-            <HostDir>/mnt/cache/appdata/laverna</HostDir>
-            <Mode>rw</Mode>
-        </Volume>
-    </Data>
-    <Environment/>
+  <Date>2016-08-22</Date>
+  <Beta>False</Beta>
+  <Category>Productivity:Notes</Category>
+  <Name>Laverna</Name>
+  <Project>https://github.com/Laverna/laverna</Project>
+  <Repository>thklein/laverna</Repository>
+  <Registry>https://hub.docker.com/r/thklein/laverna/</Registry>
+  <GitHub></GitHub>
+  <TemplateURL>https://raw.githubusercontent.com/senseiner/docker-templates/master/Laverna/laverna.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/Laverna/img/laverna.png</Icon>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://lime-technology.com/forum/index.php</Support>
+  <WebUI> http://[IP]:[PORT:85]</WebUI>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/laverna</HostDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
 
-    <Overview>
-        [b]Laverna - note taking web app [/b][br] - Laverna is a JavaScript note-taking web application with a Markdown editor and encryption support. It's built to be an open source alternative to Evernote.[br] - The application stores all your notes in
-        your browser databases such as indexedDB or localStorage, which is good for security reasons, because only you have access to them.[br] Live demo: [a href]https://laverna.cc/[/a][br]
-    </Overview>
+  <Overview>
+[b]Laverna - note taking web app [/b][br]
+- Laverna is a JavaScript note-taking web application with a Markdown editor and encryption support. It's built to be an open source alternative to Evernote.[br]
+- The application stores all your notes in your browser databases such as indexedDB or localStorage, which is good for security reasons, because only you have access to them.[br]
+Live demo: [a href]https://laverna.cc/[/a][br]
+  </Overview>
 
-    <Description>
-        [b]Laverna - note taking web app [/b][br] - Laverna is a JavaScript note-taking web application with a Markdown editor and encryption support. It's built to be an open source alternative to Evernote.[br] - The application stores all your notes in
-        your browser databases such as indexedDB or localStorage, which is good for security reasons, because only you have access to them.[br] Live demo: [a href]https://laverna.cc/[/a][br] [br] [b][u][span style='color: #E80000;']Config:[/span][/u][/b][br]
-        [u][b]Volume Mapping[/b][/u][br] [b]/etc/netdata[/b]: App configuration, usually mapped to /mnt/cache/appdata/laverna[br]
-    </Description>
+  <Description>
+[b]Laverna - note taking web app [/b][br]
+- Laverna is a JavaScript note-taking web application with a Markdown editor and encryption support. It's built to be an open source alternative to Evernote.[br]
+- The application stores all your notes in your browser databases such as indexedDB or localStorage, which is good for security reasons, because only you have access to them.[br]
+Live demo: [a href]https://laverna.cc/[/a][br]
+[br]
+[b][u][span style='color: #E80000;']Config:[/span][/u][/b][br]
+[u][b]Volume Mapping[/b][/u][br]
+[b]/etc/netdata[/b]: App configuration, usually mapped to /mnt/cache/appdata/laverna[br]
+  </Description>
 
-    <changes>
-        [center] [b]Senseiner:[/b] Laverna [/center] [center][font size=4]Change Log[/font][/center] [font size=3]2016.08.22[/font] - Initial release of laverna template
+  <changes>
+    [center] [b]Senseiner:[/b] Laverna [/center]
 
-    </changes>
+[center][font size=4]Change Log[/font][/center]
+
+[font size=3]2016.08.22[/font]
+- Initial release of laverna template
+
+  </changes>
 
 </Container>
