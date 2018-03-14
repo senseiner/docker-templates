@@ -49,6 +49,8 @@
     </Data>
     <WebUI>http://[IP]:[PORT:8765]</WebUI>
     <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/cloudcmdLogo.png</Icon>
+    <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="Set to Desired User ID" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+    <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="Set to Desired Group ID" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
     <Config Name="Mount Path" Target="/UNRAID" Default="" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
     <Config Name="Port" Target="8000" Default="8765" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8765</Config>
     <Config Name="appdata" Target="/root" Default="" Mode="rw" Description="Container Path: /root" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/cloudcmd</Config>
