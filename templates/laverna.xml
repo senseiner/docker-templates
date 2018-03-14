@@ -38,7 +38,7 @@
         </Volume>
     </Data>
     <WebUI>http://[IP]:[PORT:85]</WebUI>
-    <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/cloudcmdLogo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/images/laverna.png</Icon>
     <Config Name="Mount Path" Target="/UNRAID" Default="" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
     <Config Name="Port" Target="80" Default="85" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">85</Config>
     <Config Name="appdata" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/laverna</Config>
