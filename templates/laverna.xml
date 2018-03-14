@@ -10,7 +10,7 @@
     <Overview>
         [b]Laverna[/b] is a JavaScript note taking application with Markdown editor and encryption support. Consider it like open source alternative to Evernote.[br/] [br/] [b]Instructions:[/b][br/] Set Port to the port you want to be able to access from. Defaults to [b]85[/b][br/] This is where Laverna will store it's configuration files, database and logs. Defaults to /mnt/user/appdata/laverna[br/]
     </Overview>
-    <Support>http://lime-technology.com/forum/index.php/Support>
+    <Support>http://lime-technology.com/forum/index.php</Support>
     <Registry>https://hub.docker.com/r/elliotjreed/laverna/</Registry>
     <GitHub>https://github.com/Laverna/laverna</GitHub>
     <Repository>elliotjreed/laverna</Repository>
