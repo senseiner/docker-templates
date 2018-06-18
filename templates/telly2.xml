@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>telly</Name>
+  <Name>telly2</Name>
   <Repository>tombowditch/telly</Repository>
   <Registry>https://hub.docker.com/r/tombowditch/telly/~/dockerfile/</Registry>
   <Network>bridge</Network>
@@ -13,7 +13,7 @@
 An IPTV Proxy for Plex Live TV &amp;amp; DVR</Overview>
   <Category>Tools: MediaApp:Video MediaServer:Video Network:Proxy</Category>
   <WebUI>http://[IP]:[PORT:6078]</WebUI>
-  <TemplateURL>https://github.com/tombowditch/docker-templates/raw/master/tombowditch/telly.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/senseiner/docker-templates/master/templates/telly2.xml</TemplateURL>
   <Icon>https://i.imgur.com/eapTTSL.png</Icon>
   <ExtraParams/>
   <PostArgs/>
@@ -33,7 +33,7 @@ An IPTV Proxy for Plex Live TV &amp;amp; DVR</Description>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/telly/tmp</HostDir>
+      <HostDir>/mnt/user/appdata/telly2/tmp</HostDir>
       <ContainerDir>/tmp</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -59,5 +59,5 @@ An IPTV Proxy for Plex Live TV &amp;amp; DVR</Description>
   <Config Name="Streams Allowed" Target="STREAMS" Default="1" Mode="" Description="How many streams your IPTV provides" Type="Variable" Display="always" Required="true" Mask="false">1</Config>
   <Config Name="Path or URL to m3u playlist from IPTV Provider" Target="PLAYLIST" Default="" Mode="" Description="Add your URL or m3u location here" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="USEREGEX" Target="USEREGEX" Default="" Mode="" Description="Filter Countries etc with regex example UK|US for UK and US only" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="/tmp" Target="/tmp" Default="" Mode="rw" Description="Path to /tmp folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/telly/tmp</Config>
+  <Config Name="/tmp" Target="/tmp" Default="" Mode="rw" Description="Path to /tmp folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/telly2/tmp</Config>
 </Container>
