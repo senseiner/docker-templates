@@ -54,28 +54,10 @@ An IPTV Proxy for Plex Live TV &amp;amp; DVR</Description>
       <Name>USEREGEX</Name>
       <Mode/>
     </Variable>
-    <Variable>
-  <Value>Test</Value>
-  <Name>FRIENDLYNAME</Name>
-  <Mode/>
-</Variable>
-<Variable>
-  <Value>11113</Value>
-  <Name>DEVICEID</Name>
-  <Mode/>
-</Variable>
-<Variable>
-  <Value>telly124</Value>
-  <Name>DEVICEAUTH</Name>
-  <Mode/>
-</Variable>
   </Environment>
   <Config Name="Host Port" Target="6078" Default="6078" Mode="tcp" Description="Container Port: 6078" Type="Port" Display="always" Required="true" Mask="false">6078</Config>
   <Config Name="Streams Allowed" Target="STREAMS" Default="1" Mode="" Description="How many streams your IPTV provides" Type="Variable" Display="always" Required="true" Mask="false">1</Config>
   <Config Name="Path or URL to m3u playlist from IPTV Provider" Target="PLAYLIST" Default="" Mode="" Description="Add your URL or m3u location here" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="USEREGEX" Target="USEREGEX" Default="" Mode="" Description="Filter Countries etc with regex example UK|US for UK and US only" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="/tmp" Target="/tmp" Default="" Mode="rw" Description="Path to /tmp folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/telly2/tmp</Config>
-  <Config Name="Friendly Name" Target="FRIENDLYNAME" Default="Test" Mode="" Description="Name Telly sends plex" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
-<Config Name="Device ID" Target="DEVICEID" Default="11113" Mode="" Description="Device ID for the Tuner, If you run multiple telly instances you must have each one have a unique Device ID" Type="Variable" Display="always" Required="false" Mask="false">11113</Config>
-<Config Name="Device Auth" Target="DEVICEAUTH" Default="telly124" Mode="" Description="The Device Auth that telly sends Plex" Type="Variable" Display="always" Required="false" Mask="false">telly124</Config>
 </Container>
