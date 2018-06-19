@@ -16,7 +16,7 @@ An IPTV Proxy for Plex Live TV &amp;amp; DVR</Overview>
   <TemplateURL>https://raw.githubusercontent.com/senseiner/docker-templates/master/templates/telly2.xml</TemplateURL>
   <Icon>https://i.imgur.com/eapTTSL.png</Icon>
   <ExtraParams/>
-  <PostArgs>-base=localhost:6078 -listen 0.0.0.0:6078<PostArgs/>
+  <PostArgs><PostArgs/>
   <DateInstalled>1519326784</DateInstalled>
   <Description>Telly - IPTV on Plex Live TV&#xD;
 &#xD;
