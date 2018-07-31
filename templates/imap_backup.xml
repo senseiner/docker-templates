@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+    <Privileged>false</Privileged>
+    <Beta>False</Beta>
+    <Category>Tools:</Category>
+    <Name>CloudCommander</Name>
+    <Description>
+        [b]imap-backup[/b] Backup GMail (or other IMAP) accounts to disk.[br/] [br/] 
+    </Description>
+    <Overview>
+    </Overview>
+    <Support>#</Support>
+    <Registry>https://hub.docker.com/r/senseiner/imap-backup/</Registry>
+    <GitHub>https://github.com/joeyates/imap-backup</GitHub>
+    <Repository>senseiner/imap-backup</Repository>
+    <Network>bridge</Network>
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+            <Port>
+            </Port>
+        </Publish>
+    </Networking>
+    <Environment>
+        <Variable>
+            <Name>PUID</Name>
+            <Value>99</Value>
+        </Variable>
+        <Variable>
+            <Name>PGID</Name>
+            <Value>100</Value>
+        </Variable>
+    </Environment>
+    <Data>
+        <Volume>
+            <HostDir>/mnt/user/appdata/imap-backup</HostDir>
+            <ContainerDir>/root</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/images/imap_backup.png</Icon>
+    <Config Name="appdata" Target="/root" Default="" Mode="rw" Description="Container Path: /root" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/imap-backup</Config>
+</Container>
