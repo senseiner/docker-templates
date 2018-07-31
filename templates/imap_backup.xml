@@ -33,6 +33,6 @@
             <Mode>rw</Mode>
         </Volume>
     </Data>
-    <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/images/imap_backup.png</Icon>
+    <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/images/imap_backup2.png</Icon>
     <Config Name="appdata" Target="/root" Default="" Mode="rw" Description="Container Path: /root/.imap-backup" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/imap-backup</Config>
 </Container>
