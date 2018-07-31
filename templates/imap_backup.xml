@@ -16,10 +16,6 @@
     <Network>bridge</Network>
     <Networking>
         <Mode>bridge</Mode>
-        <Publish>
-            <Port>
-            </Port>
-        </Publish>
     </Networking>
     <Environment>
         <Variable>
