@@ -7,8 +7,7 @@
     <Description>
         [b]imap-backup[/b] Backup GMail (or other IMAP) accounts to disk.[br/] [br/] 
     </Description>
-    <Overview>
-    </Overview>
+    <Overview>.</Overview>
     <Support>#</Support>
     <Registry>https://hub.docker.com/r/senseiner/imap-backup/</Registry>
     <GitHub>https://github.com/joeyates/imap-backup</GitHub>
@@ -30,10 +29,10 @@
     <Data>
         <Volume>
             <HostDir>/mnt/user/appdata/imap-backup</HostDir>
-            <ContainerDir>/root</ContainerDir>
+            <ContainerDir>/root/.imap-backup</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
     </Data>
     <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/images/imap_backup.png</Icon>
-    <Config Name="appdata" Target="/root" Default="" Mode="rw" Description="Container Path: /root" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/imap-backup</Config>
+    <Config Name="appdata" Target="/root" Default="" Mode="rw" Description="Container Path: /root/.imap-backup" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/imap-backup</Config>
 </Container>
