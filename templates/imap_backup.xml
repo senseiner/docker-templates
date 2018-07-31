@@ -1,38 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Container version="2">
-    <Privileged>false</Privileged>
-    <Beta>False</Beta>
-    <Category>Tools:</Category>
-    <Name>Imap Backup</Name>
-    <Description>
-        [b]imap-backup[/b] Backup GMail (or other IMAP) accounts to disk.[br/] [br/] 
-    </Description>
-    <Overview>.</Overview>
-    <Support>#</Support>
-    <Registry>https://hub.docker.com/r/senseiner/imap-backup/</Registry>
-    <GitHub>https://github.com/joeyates/imap-backup</GitHub>
-    <Repository>senseiner/imap-backup</Repository>
-    <Network>bridge</Network>
-    <Networking>
-        <Mode>bridge</Mode>
-    </Networking>
-    <Environment>
-        <Variable>
-            <Name>PUID</Name>
-            <Value>99</Value>
-        </Variable>
-        <Variable>
-            <Name>PGID</Name>
-            <Value>100</Value>
-        </Variable>
-    </Environment>
-    <Data>
-        <Volume>
-            <HostDir>/mnt/user/appdata/imap-backup</HostDir>
-            <ContainerDir>/root/.imap-backup</ContainerDir>
-            <Mode>rw</Mode>
-        </Volume>
-    </Data>
-    <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/images/imap_backup2.png</Icon>
-    <Config Name="appdata" Target="/root" Default="" Mode="rw" Description="Container Path: /root/.imap-backup" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/imap-backup</Config>
+  <Name>imap-backup</Name>
+  <Repository>senseiner/imap-backup</Repository>
+  <Registry>https://hub.docker.com/r/senseiner/imap-backup/~/dockerfile/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/senseiner/imap-backup/</Support>
+  <Project/>
+  <Overview>imap-backup: a tool for backing up IMAP email accounts</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/images/imap_backup2.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1533002180</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>imap-backup: a tool for backing up IMAP email accounts</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/imap-backup</HostDir>
+      <ContainerDir>/root/.imap-backup</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/root/.imap-backup" Default="" Mode="rw" Description="Container Path: /root/.imap-backup" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/imap-backup</Config>
+  <Config Name="Host Key 1" Target="PUID" Default="" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Host Key 2" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 </Container>
