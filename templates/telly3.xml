@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>telly</Name>
+  <Repository>tombowditch/telly</Repository>
+  <Registry>https://hub.docker.com/r/tombowditch/telly/~/dockerfile/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/tombowditch/telly/</Support>
+  <Project>https://github.com/tombowditch/telly</Project>
+  <Overview>&#xD;
+&#xD;
+[b]Converted By Community Applications[/b]</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6077]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.discordapp.com/attachments/414169930544578562/415964140432130048/Screenshot_2018-02-21_14.12.44.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1534073739</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#xD;
+&#xD;
+[b]Converted By Community Applications[/b]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6077</HostPort>
+        <ContainerPort>6077</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/telly/</HostDir>
+      <ContainerDir>/tmp</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1</Value>
+      <Name>TELLY_IPTV_STREAMS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Url or path to m3u</Value>
+      <Name>TELLY_IPTV_PLAYLIST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.x.x:6077</Value>
+      <Name>TELLY_WEB_BASE_ADDRESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>--discovery.ssdp</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>TELLY_LOG_REQUESTS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>TELLY_FILTER_REGEX_MODE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0.0.0.0:6077</Value>
+      <Name>TELLY_WEB_LISTEN_ADDRESS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="6077" Default="6077" Mode="tcp" Description="Container Port: 6077" Type="Port" Display="always" Required="true" Mask="false">6077</Config>
+  <Config Name="TELLY_IPTV_STEAMS" Target="TELLY_IPTV_STEAMS" Default="" Mode="" Description="How many streams your IPTV provides&#13;&#10;&#13;&#10;--iptv.streams" Type="Variable" Display="always" Required="false" Mask="false">3</Config>
+  <Config Name="TELLY_IPTV_PLAYLIST" Target="TELLY_IPTV_PLAYLIST" Default="" Mode="" Description="Container Variable: TELLY_IPTV_PLAYLIST" Type="Variable" Display="always" Required="false" Mask="false">http://iptv-epg.com/8437-wlcitd.m3u</Config>
+  <Config Name="/tmp" Target="/tmp" Default="" Mode="rw" Description="Container Path: /tmp" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/telly/</Config>
+  <Config Name="TELLY_WEB_BASE_ADDRESS" Target="TELLY_WEB_BASE_ADDRESS" Default="" Mode="" Description="Container Variable: TELLY_WEB_BASE_ADDRESS" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.200:6077</Config>
+  <Config Name="TELLY_DISCOVERY_SSDP" Target="--discovery.ssdp" Default="true" Mode="" Description="Container Variable: --discovery.ssdp" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="TELLY_LOG_REQUESTS" Target="TELLY_LOG_REQUESTS" Default="true" Mode="" Description="Container Variable: TELLY_LOG_REQUESTS" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="TELLY_FILTER_REGEX_MODE" Target="TELLY_FILTER_REGEX_MODE" Default="true" Mode="" Description="Container Variable: TELLY_FILTER_REGEX_MODE" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="TELLY_WEB_LISTEN_ADDRESS" Target="TELLY_WEB_LISTEN_ADDRESS" Default="0.0.0.0:6077" Mode="" Description="Container Variable: TELLY_WEB_LISTEN_ADDRESS" Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0:6077</Config>
+</Container>
