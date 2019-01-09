@@ -55,7 +55,7 @@
             <Mode>rw</Mode>
         </Volume>
     </Data>
-    <WebUI>http://[IP]:[PORT:8096]/</WebUI>
+    <WebUI>http://[IP]:[PORT:8097]/</WebUI>
     <Icon>https://raw.githubusercontent.com/senseiner/docker-templates/master/images/jellyfin.png</Icon>
     <Config Name="Mount Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/config</Config>
     <Config Name="Port" Target="8097" Default="8097" Mode="tcp" Description="Container Port: 8097" Type="Port" Display="always" Required="true" Mask="false">8097</Config>
