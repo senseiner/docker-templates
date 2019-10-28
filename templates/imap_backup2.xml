@@ -25,7 +25,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/imap-backup</HostDir>
+      <HostDir>/mnt/user/appdata/imap-backup2</HostDir>
       <ContainerDir>/root/.imap-backup</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -43,7 +43,7 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Host Path 1" Target="/root/.imap-backup" Default="" Mode="rw" Description="Container Path: /root/.imap-backup" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/imap-backup</Config>
+  <Config Name="Host Path 1" Target="/root/.imap-backup" Default="" Mode="rw" Description="Container Path: /root/.imap-backup" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/imap-backup2</Config>
   <Config Name="Host Key 1" Target="PUID" Default="" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="Host Key 2" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 </Container>
